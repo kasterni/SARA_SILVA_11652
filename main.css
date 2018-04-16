@@ -1,0 +1,340 @@
+/* SARA SILVA 11652 */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    color: gray;
+}
+
+/* SOCIAL MEDIA */
+
+.fa {
+    color: #1386a3;
+    margin-right: 5px;
+}
+
+/* HEADER */
+
+.container {
+    background: #00ccff;
+    display: grid;
+    grid-template-rows: 100px 350px 100px;
+}
+
+.header {
+    width: 100%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+
+/** ESTILOS NA HEADER **/
+
+h1 {
+    color: #005282;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 450;
+    text-align: center;
+    color: #008dac;
+}
+
+/** MENU **/
+
+.menu {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    grid-row-start: 3;
+    text-align: center
+        ;
+}
+
+#follow {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius:  5px;
+    padding: 4px;    
+    color: #000;
+    font-size: 12px;
+}
+
+ul {
+    width: 100%;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+li {
+    text-align: center;
+    display: inline-block;
+}
+
+li a {
+    color: #1386a3;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+li a:hover {
+    color: #055c72;
+}
+
+/** BARRA DE CIMA **/
+
+.top-bar {
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: inline-block;
+    background: #00ccff;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    float: right;
+    position: fixed;
+    top: 0;  
+}
+
+.top-bar img {
+    width: 35px;
+    height: 35px;
+    margin: 20px;
+    float: left;
+}
+
+
+/** BUTTONS **/
+
+#log {
+    width: 5%;
+    padding-top: 30px;
+    float: right;
+    color: #000;
+}
+
+#get {
+    color: #000;
+    float: right;
+    border: 1px solid darkblue;
+    width: 100px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/* CONTEÚDO */
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.content img {
+    border: 1px solid #bababa;
+    height: 200px;
+}
+
+/** POST **/
+.column {
+    width: 25%;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+h4 {
+    text-align: left;
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #000;
+}
+
+p {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/** ASSINATURA DO POST **/
+
+#author {
+    display: flex;
+    vertical-align: middle;
+    position: absolute;
+}
+
+#author-name {
+    color: #007698;
+    float: right;
+    align-content: flex-end;
+    padding-top: 5%;
+}
+
+#author img {
+    float: left;
+    margin-right: 5px;
+    vertical-align: middle;
+    border-radius: 50%;
+    padding: 2px;
+    width: 36px;
+    height: 36px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #52c3a5;
+    border-bottom: 2px solid #52c3a5;
+}
+
+#date {
+    vertical-align: middle;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    color: gray;
+}
+
+.icon {
+    color: white;
+    display: none;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/** RESPONSIVE **/
+
+@media screen and (max-width: 1024px) {
+   
+    ul, li {
+        display: none;
+    }
+    
+    .icon {
+        display: block;
+    }
+    .top-bar {
+        height: auto;
+        position: absolute;
+    }
+    
+    #log {
+        display: none;
+    }
+    
+    .content {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+}
+  
+    .column {
+        padding: 30px;
+        margin: auto;
+        width: 60%;
+        text-align: center;
+    }
+    
+    .column img {
+        width: 100%;
+        height: auto;
+    }
+    h4 {
+        width: 100%;
+        text-align: left;
+    }
+    
+    p {
+        width: 100%;
+        text-align: left;
+    }
+}
+ 
+    
+    
+@media screen and (max-width: 600px) {
+   
+    li, ul {
+        display: none;
+    }
+    
+    .icon {
+        display: block;
+    }
+   
+    .top-bar {
+        height: auto;
+        position: absolute;
+    }
+    
+    #log {
+        display: none;
+    }
+    
+    h2 {
+        padding: 20px;
+        margin: auto;
+    }
+    
+    .content {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+}
+  
+    .column {
+        padding: 30px;
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+    
+    .column img {
+        width: 100%;
+        height: auto;
+    }
+    
+    h4 {
+        width: 100%;
+        text-align: left;
+    }
+    
+    p {
+        width: 100%;
+        text-align: left;
+    }
+    
+    #date {
+        text-align: left;
+    }
+}
+ 
+    
